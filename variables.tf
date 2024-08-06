@@ -29,7 +29,7 @@ variable "virtual_network_id" {
   type        = string
 }
 
-variable "private_dns_zone_name" {
-  description = "The Private dns zone name to associate the A record to it."
+variable "private_dns_zone_id" {
+  description = "The Private dns zone id to associate the A record to it."
   type        = string
 }
