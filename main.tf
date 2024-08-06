@@ -22,11 +22,6 @@ resource "azurerm_private_endpoint" "acr_endpoint" {
   }
 
   private_dns_zone_group {
-    name                 = ""
-    private_dns_zone_ids = []
-  }
-
-  private_dns_zone_group {
     name                 = "omerf-acr-dns-zone-group"
     private_dns_zone_ids = [var.private_dns_zone_id]
   }
